@@ -1,0 +1,1 @@
+const o="General",e="Home",c="Product",n="Concert",t="Modeling",d="Contact Us",r={general:o,home:e,product:c,concert:n,"pre-wedding":"Pre-wedding",modeling:t,"music-video":"Music Video",contactus:d};export{n as concert,d as contactus,r as default,o as general,e as home,t as modeling,c as product};
