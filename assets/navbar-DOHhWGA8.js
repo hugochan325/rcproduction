@@ -1,1 +1,0 @@
-const o="一般",c="主頁",n="作品",t="演唱會",e="模特兒拍攝",s="聯絡我們",r={general:o,home:c,product:n,concert:t,"pre-wedding":"婚紗攝影",modeling:e,"music-video":"音樂影片",contactus:s};export{t as concert,s as contactus,r as default,o as general,c as home,e as modeling,n as product};
