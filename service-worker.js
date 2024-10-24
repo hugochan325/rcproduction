@@ -1,14 +1,12 @@
 const CACHE_NAME = 'my-app-cache-v1';
 const ASSETS_TO_CACHE = [
-  '/', // You can pre-cache other static assets here if needed.
-  '/index.html'
+  
 ];
 
 // Install event: cache the essential assets
 self.addEventListener('install', (event) => {
   event.waitUntil(
     caches.open(CACHE_NAME).then((cache) => {
-      console.log('Opened cache');
       return cache.addAll(ASSETS_TO_CACHE);
     })
   );
@@ -21,7 +19,6 @@ self.addEventListener('activate', (event) => {
       return Promise.all(
         cacheNames.map((cache) => {
           if (cache !== CACHE_NAME) {
-            console.log('Clearing old cache:', cache);
             return caches.delete(cache);
           }
         })
